@@ -129,9 +129,9 @@ display: flex;
 }
 #headerpic{
 margin: 0;
-height: 190px;
-max-width: 25%;
-width:30%;
+height: 195px;
+max-width: 23%;
+border-radius: 50%;
 
 }
 #about{
@@ -273,7 +273,7 @@ color: #333;
 	width:100%;
 }
 }
-@media (min-width : 950px) and (max-width : 1300px){
+@media (min-width : 950px) and (max-width : 1200px){
 body{
 `	display: block;
 	}
@@ -299,9 +299,6 @@ body{
 	width: 65%;
 }
 #headerpic{
-width: 35%;
-margin: 0;
-height: 200px;
 
 }
 }
