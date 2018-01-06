@@ -8,21 +8,25 @@
 		<meta name="author" content="Kirubel Girma">
 		<title>Kirubel Girma</title>
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-		<link rel= "stylesheet" href="CSS/normalize.css"/>
-		<link rel= "stylesheet" href="CSS/kiru2.css"/>
+		<!--<link rel= "stylesheet" href="./css/normalize.css"/>-->
+		<link rel= "stylesheet" href="./css/kiru2.css"/>
+		<script src="https://use.fontawesome.com/6547337e49.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.min.js"
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous">
 		</script>
-		<script src="JS/kiru.js"></script>
+		<script src="./JS/kiru.js"></script>
 	</head>
 	<body>
 	<!--Navigation-->
 		<ul id="pagenav">
-			<div class="menu">
-    			<li><a class="scroll" href="#home">Home</a></li>
+			<div id="burger">
+	<i href="#" class="fa fa-bars fa-2x burger-nav" aria-hidden="true" hidden></i>
+			</div>
+			<div class="menu" id="menus">
+    			<li><a class="scroll" href="#">Home</a></li>
     			<li><a class="scroll" href="#aboutme">About</a></li>
     			<li><a class="scroll" href="#education">Education</a></li>
     			<li><a class="scroll" href="#contacts">Contact</a></li> 
@@ -41,11 +45,11 @@
 <section id="aboutme" class="largesection">
 <h2 class="section-title">About me</h2>
 	<div class="container" id="about-container">
-		 <img id="headerpic" src="profilepic3.jpg">
+		 <img id="headerpic" src="images/profilepic3.jpg">
 		 <div id="about">
 		 <h2>I'm Kirubel Girma</h2>
-		<p>As we continue to live in these rapidly evolving times, I believe that pursuing a multi-faceted discipline is beneficial to confronting the obstacles developers may encounter throughout their journey. I am a sophomore (second year) studying at the University of California San Diego, where I am majoring in Cognitive Science with a specialization in Machine Learning and Neural Computation. My minor in design delves into UI/UX and Human-Computer Interaction.</p>
-		<p>I am currently spending time to understanding the scopes of data science and analysis and machine learning through a self-taught and learn-by-doing approach. Most importantly, I am most passionate about front-end web development and utilizing the design process to develop web applications for the user.</p>	
+		<p class="spacing">As we continue to live in these rapidly evolving times, I believe that pursuing a multi-faceted discipline is beneficial to confronting the obstacles developers may encounter throughout their journey. I am a sophomore (second year) studying at the University of California San Diego, where I am majoring in Cognitive Science with a specialization in Machine Learning and Neural Computation. My minor in design delves into UI/UX and Human-Computer Interaction.</p>
+		<p class="spacing">I am currently spending time to understanding the scopes of data science and analysis and machine learning through a self-taught and learn-by-doing approach. Most importantly, I am most passionate about front-end web development and utilizing the design process to develop web applications for the user.</p>	
 		<p>I typically spend my leisure time by working with the Jupyter Notebook and Sketch, learning emerging trends and technologies, staying physically active, and networking with my fellow peers. I hope to expand my expertise in my multi-disciplined learning path by exploring opportunities that can help us tackle the issues communities face with learning anything imaginable or unimaginable so that everyone can contribute toward a finer society. </p>
 		</div>
 	</div>
@@ -56,10 +60,10 @@
 	<div class="container">
 	<h2 class="inner-title">University of California San Diego</h2>
 	<h3 class="textmute" style="font-style:italic" >2016-2020</h3>
-	<p><b>TYPE</b>: Bachelors of Science (B.S.)</p>
-	<p> <b>MAJOR</b>: Cognitive Science </p>
-	<p> <b>SPECIALIZATION</b>: Machine Learning and Neural Computation </p>
-	<p> <b>MINOR</b>: Design (UI/UX) </p>
+	<p class="spacing"><b>TYPE</b>: Bachelors of Science (B.S.)</p>
+	<p class="spacing"> <b>MAJOR</b>: Cognitive Science </p>
+	<p class="spacing"> <b>SPECIALIZATION</b>: Machine Learning and Neural Computation </p>
+	<p class="spacing"> <b>MINOR</b>: Design (UI/UX) </p>
 	<a class="button" href="https://ucsd.edu/">Website</a>
 	</div>
 </section>
@@ -69,7 +73,7 @@
 	<div id="contact2"> 
 	<div class="email contact">
 		<h2 class="inner-title">Write to me </h2>
-		<p>kgirma@ucsd.edu</p>
+		<p class="spacing">kgirma@ucsd.edu</p>
 		<p>kirubelgirma0@gmail.com </p>
 	</div>
 	<div class="phone contact">
