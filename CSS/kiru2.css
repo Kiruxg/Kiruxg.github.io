@@ -40,8 +40,8 @@ height: 40px;
 	width:100%;
 	*/
 }
-#menus{
-	margin-top: -39px;
+#burger{
+	display: none;
 }
 .burger-nav{
 	visibility: hidden;
