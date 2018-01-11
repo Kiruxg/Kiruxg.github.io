@@ -9,7 +9,7 @@ Base Styles
 body {
 	
 	font-family: "Open Sans",sans-serif;
-	
+	line-height: 2;
 	display: block;
 	background-color:#fffcfc;
 }
