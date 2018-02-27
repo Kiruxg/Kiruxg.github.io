@@ -83,7 +83,6 @@ Header
 }
 #showcase{
 	font-family: "Playfair Display",serif;
-    background: rgba(0,0,0,0.4);
     padding-bottom: 50px;
     width: 75%;
     margin: 0 auto;
@@ -103,7 +102,7 @@ margin-top: 25px;
 
 	}
 .intro{
-    color: white;
+    color: black;
 }
 #description{
 	font-size: 20px;
