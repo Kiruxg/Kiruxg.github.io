@@ -82,9 +82,9 @@ body {
     background: #f5a608;
     display: block;
     border-radius: 5px;
-    padding: 8.5px;
+    padding: 9px;
     margin: 30px 10px;
-    width: 8.5%;
+    width: 13%;
     height: 40px;
     cursor: pointer;
     border: none;
@@ -100,7 +100,7 @@ body {
      text-decoration: none;
 }
 #social i{
-    font-size: 21px;
+    font-size: 16px;
     color: black;
     float: left;
 }
@@ -116,45 +116,44 @@ body {
     padding: 3px;
     cursor: pointer;
 }
-
-
-.center{
-    width: 100%;
+#header{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 .rectangle{
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    background: url('../Photospace/images/mainpic.jpeg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
     color: #fcfaf7;
-    text-align: left;
-    margin-left: 35px;
+    position: relative;
+}
+.rectangle img{
+    width: 100%;
+	height: auto;
+    max-height: 100%;
 }
 #name{
-    position: absolute;
-        letter-spacing: 2px;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    font-size: 55px;
-    letter-spacing: 3px;
+    font-size: 40px;
+    letter-spacing: 2px;
     line-height:2.5;
     text-transform: uppercase;
 }
-
+.positioningtext{
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fcfaf7;
+    font-family: 'Lobster', cursive;
+}
+}
 .txt-rotate{
     font-size: 20px;
     letter-spacing: 2px;
     text-align: left;
-    position: absolute;
-        letter-spacing: 2px;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
 }
 
 /* =======
@@ -164,17 +163,21 @@ About me
      margin-top: 45px;
     padding-top: 100px;
     background-color: #f8f8f8;
+    width: 100%;
 }
 #about-container{
-display: flex;
 padding: 0px;
-margin: 0 100px;
+margin: 0 20px;
+height: 550px;
+}
+#about-container .divpic{
+    text-align: left;
 }
 #headerpic{
-padding: 25px;
+padding: 30px;
 height: 320px;
-width: 350px;
-   background: url('profilepic3.jpg') no-repeat center center;
+width: 330px;
+    vertical-align: top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -183,7 +186,7 @@ width: 350px;
 #about{
 width: 60%;
 padding: 20px;
-padding-left: 00px;
+display: inline-block;
 font-family: "Open Sans",sans-serif;
 }
 
@@ -212,6 +215,7 @@ Education
     background-color: #f8f8f8;
 	text-align: center;
     padding-bottom: 20px;
+    margin-top: 45px;
 }
 .textmute {
 	color:#777;
@@ -259,32 +263,39 @@ Portfolio
 .portfolio-content{
 	text-align: center;
 	width: 50%;
-    height: 70%;
+    height: auto;
     float: left;
     font-family: "Open Sans",sans-serif;
     padding-bottom: 60px;
     
 }
+#portfolio #centering{
+    margin: 0 auto;
+}
 #currentbox{
      background: #e2e2e2;
 }
 #current{
-    width: 80%;
-    margin: 30px 130px;
+    width: 100%;
+    height: auto;
 }
 #current ul{
     font-weight: 600;
     font-size: 13px;
-    margin: 50px 400px;
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+
 }
 #current ul li{
-    text-align: left;
+    display: block;
+    font-size: 12px;
 }
 #current img{
     background: url('builderbook.png') no-repeat center center;
 }
 #current p{
-    width: 40%;
+    width: 50%;
 }
 #current h4{
     font-weight: 400;
@@ -301,17 +312,24 @@ Portfolio
 }
 
 .portfolio-content img{
-background: url('portfoliopromo.PNG') no-repeat center center; 
+background: url('../portfoliopromo.png') no-repeat center center; 
  -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;    
 } 
+.portfolio-content .design{
+    background: url('../finalprojectpic.png') no-repeat center center; 
+ -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
 .portfolio-content h2{
     font-size: 16px;
 }
 .preview{
-	height: 60%;
+	height: 35%;
 	width: 60%;
 	margin: 10px;
 	margin-top: 20px;
@@ -360,56 +378,83 @@ Contact
 /* ==========
 MEDIA QUERIES
 =============*/
-
+@media only screen and  (max-width : 1000px){
+    #headerpic{
+        display block;
+        width: 50%;
+        padding: 20px;
+    }
+    #aboutme{
+        text-align: center;
+         padding-top: 20px;
+       
+    }
+    #about-container{
+        height: auto;
+    }
+    #about{
+        width: 90%;
+    }
+    #social{
+        text-align: center;
+    }
+    .pitch{
+        display: none;
+    }
+    #social button{
+        width: 120px;
+    }
+    #social a{
+        display: inline-block;
+    }
+}
 @media only screen and  (max-width : 850px){
      #logo{
         display: none;
     }
-    
-    .center{
-        width: 100%;
-        min-height: 85%;
-    }
+
     #name{
-        font-size: 40px;
+       font-size: 2.0em;
         letter-spacing: 2px;
     }
+    .txt-rotate{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: left;
+}
     #social{
         height: 15vh;
     }
-    #social p{
-        display: none;
+    
+    #social button{
+        text-align: center;
     }
-    .center{
-        min-height: 80vh;
-    }
-     .rectangle{
-    text-align: left;
-    margin-left: 50px;
-}
+   
     #about{
         margin: 0 auto;;
-        width: 90%;
+        width: 100%;
     }
     #about-container {
     display: block;
 }
+
+    .positioningtext{
+        width: 100%;
+        padding: 30px;
+    }
     #headerpic {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 90%;
-    max-width: 85%;
-    height: auto;
+    max-width: 280px;
+    height: 300px;
     margin: 0 25px;
     border-radius: 0%;
     
 }
-    #education{
-        margin: 0 auto;
-        
-    }
+    
     .portfolio-content{
     width: 80%;
-     height: 80%;
+     height: auto;
     padding: 25px 0;
     margin: 0 auto;
     float: none;
@@ -419,7 +464,7 @@ MEDIA QUERIES
         padding: 0;
     }
     .portfolio-content img{
-        height: 40%;
+        height: auto;
     }
     .preview{
         width: 60%;
@@ -428,15 +473,22 @@ MEDIA QUERIES
         width: 100%;
         margin-left: 0;
     }
+        #current ul{
+    width: 100%;
+}
 }
 @media only screen and (max-width : 475px){
  
     #menus{
         text-align: center;
          float: none;
-       
         margin: 0;
     }
+     .txt-rotate{
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: left;
+}
     #footermenus{
         display: none;
     }
@@ -445,11 +497,6 @@ MEDIA QUERIES
         float: none;
          font-size: 10px;
     }
-    .center{
-        height: auto;
-        
-    }
-
     #headerpic {
     margin-bottom: 20px;
     width: 100%;
@@ -459,30 +506,47 @@ MEDIA QUERIES
     padding: 20px;
     margin: 0 auto;
 }
+    #social{
+        display: block;
+    }
+#social p{
+        display: none;
+    }
+    #social i{
+        margin: 0 6px;
+    }
+     #social button{
+        width: 50px;
+         border-radius: 9px;
+    }
     #about h2{
         font-size: 20px;
+    }
+    #aboutme{
+        padding-top: 10px;
     }
     #about{
         padding: 0;
     }
     #name{
-        font-size: 35px;
+        font-size: 1.4em;
+        
     }
     .button {
-        margin: 10px;}
+        margin: 10px;
+    }
     .sociallink{
-    padding: 10px;
-    margin: 15px;
     cursor: pointer;
 }
      .portfolio-content{
     width: 95%;
-    height: 70%;
+    height: auto;
     padding: 15px 0;
     margin: 0 auto;
     }
     .portfolio-content img{
         height: 30%;
+        width: 80%;
     }
 }
 @media only screen and (max-width : 320px){

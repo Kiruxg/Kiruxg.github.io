@@ -2,7 +2,7 @@ $(document).ready(function () {
     
     $( window ).resize(function() {
     
-        if ( $(window).width() < 450){
+        if ( $(window).width() < 800){
             $('#font').css('display','none')
             $('#logo').css('display','none')
             $('#menus li').css('display','inline-block')
@@ -16,12 +16,12 @@ $(document).ready(function () {
         console.log(4)
         $('#logo').css('display','none')
     $('#menus li').css('display','inline-block')
-    } if ($(this).scrollTop() > 800 && $(window).width() > 450) {
+    } if ($(this).scrollTop() > 800 && $(window).width() > 800) {
         $('#logo').fadeIn('slow')
-        
-     } if ($(this).scrollTop() > 800 && $(window).width() < 450) {
+        $('#logo').css('display','inline-block')
+     } if ($(this).scrollTop() > 800 && $(window).width() < 800) {
             $('#font').css('display','none')
-            $('#logo').css('display','inline-block')
+            $('#logo').css('display','none')
             $('#menus li').css('display','inline-block')
      
      }
