@@ -1,0 +1,497 @@
+/* ==========
+Base Styles 
+=============*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	font-family: "Open Sans",sans-serif;
+	line-height: 2;
+	display: block;
+    margin: 0 auto;
+    background-color: palegoldenrod;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 5%;
+    min-height: calc(100vh - 70px);
+}
+
+.box{
+    background-color: #f8f8f8;
+}
+#nav{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+#logo{
+    width:190px;
+   height: 50px;
+    float: left;
+    margin-left: 20px;
+    display: none;
+}
+#font{
+    margin-right: 40px;
+    display: none;
+}
+.fa-3x{
+    float: right;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: black;
+}
+#menus{
+    float: right;
+    margin-right: 20px;
+}
+#menus li, #contact li{
+    display: inline-block;
+    padding: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+#menus li:hover{
+    background-color:  grey;
+    transition: .6s all;
+}
+#menus li a, #contact a{
+      text-decoration: none;
+      color: black;
+}
+#social{
+    margin: 0 auto;
+    background-color: white;
+    height: 15vh;
+}
+#social button{
+    float: right;
+    display: inline-block;
+    background: black;
+    color: white;
+    background: rgb(135, 110, 100);
+    display: block;
+    border-radius: 5px;
+    padding: 8.5px;
+    margin: 30px 10px;
+    width: 8.5%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    transition: background .3s ease-in-out;
+}
+#social button p{
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+#social a{
+     text-decoration: none;
+}
+#social i{
+    font-size: 21px;
+    color: black;
+    float: left;
+}
+
+.pitch{
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    padding: 35px;
+    display: inline-block;
+    font-size: 22px;
+}
+.sociallink{
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+.center{
+    width: 100%;
+}
+
+.rectangle{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    background: url('../Photospace/images/mainpic.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    color: #fcfaf7;
+    text-align: left;
+    margin-left: 35px;
+}
+#name{
+    position: absolute;
+        letter-spacing: 2px;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    font-size: 55px;
+    letter-spacing: 3px;
+    line-height:2.5;
+    text-transform: uppercase;
+}
+
+.txt-rotate{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    position: absolute;
+        letter-spacing: 2px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+
+/* =======
+About me 
+======== */
+#aboutme{
+     margin-top: 45px;
+    padding-top: 100px;
+    background-color: #f8f8f8;
+}
+#about-container{
+display: flex;
+padding: 0px;
+margin: 0 100px;
+}
+#headerpic{
+padding: 25px;
+height: 320px;
+width: 350px;
+   background: url('profilepic3.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+#about{
+width: 60%;
+padding: 20px;
+padding-left: 00px;
+font-family: "Open Sans",sans-serif;
+}
+
+.spacing {
+    margin: 12px 0;
+    font-size: 12px;
+}
+.section-title{
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.borderline{
+	 border-bottom: 1px solid #6d6d6d;
+	 width: 40%;
+	 margin: 0 auto;
+    padding: 20px;
+}
+/* =======
+Education 
+======== */
+
+#education{
+    background-color: #f8f8f8;
+	text-align: center;
+    padding-bottom: 20px;
+}
+.textmute {
+	color:#777;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.inner-title{
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	font-weight: 600;
+	
+}
+.button{
+	display: inline-block;
+       background-color: #f8f8f8;
+	text-transform: uppercase;
+	text-align: center;
+    border: 1px solid black;
+	border-radius: 40px;
+	width: 140px;
+	transition: all .5s;
+	color: black;
+    font-weight: 600;
+	text-decoration: none;
+	margin: 20px auto;
+	padding: 12px 10px;
+	font-size: 11px;
+}
+.button:hover{
+	background-color: black;
+    color: white;
+}
+
+/* =======
+Portfolio
+======== */
+
+.portfoliobox{
+    margin-top: 45px;
+    background-color: #f8f8f8;
+    padding-bottom: 60px;
+    display: flex;
+}
+.portfolio-content{
+	text-align: center;
+	width: 50%;
+    height: 70%;
+    float: left;
+    font-family: "Open Sans",sans-serif;
+    padding-bottom: 60px;
+    
+}
+#currentbox{
+     background: #e2e2e2;
+}
+#current{
+    width: 80%;
+    margin: 30px 130px;
+}
+#current ul{
+    font-weight: 600;
+    font-size: 13px;
+    margin: 50px 400px;
+}
+#current ul li{
+    text-align: left;
+}
+#current img{
+    background: url('builderbook.png') no-repeat center center;
+}
+#current p{
+    width: 40%;
+}
+#current h4{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#current .button{
+    font-size: 0.65rem;
+}
+.portfolio-content p{
+ font-size: 12px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.portfolio-content img{
+background: url('portfoliopromo.PNG') no-repeat center center; 
+ -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+} 
+.portfolio-content h2{
+    font-size: 16px;
+}
+.preview{
+	height: 60%;
+	width: 60%;
+	margin: 10px;
+	margin-top: 20px;
+	border: 2px solid #bcaf84;
+}
+.superbox{
+    margin-top: 45px;
+    background-color: #f8f8f8;
+}
+
+/* =======
+Contact
+======== */
+
+#contact{
+     margin-top: 45px;
+    padding: 25px 0;
+    
+}
+#contact ul{
+    text-align: center;
+    
+}
+
+#contact li a, #contact h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+    text-transform: none;
+    padding:0 6px;
+    text-align: center;
+    
+}
+#footersocial {
+    text-align: center;
+}
+.sociallinkfooter{
+    float: none;
+    font-size: 22px;
+    padding: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    
+}
+
+/* ==========
+MEDIA QUERIES
+=============*/
+
+@media only screen and  (max-width : 850px){
+     #logo{
+        display: none;
+    }
+    
+    .center{
+        width: 100%;
+        min-height: 85%;
+    }
+    #name{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    #social{
+        height: 15vh;
+    }
+    #social p{
+        display: none;
+    }
+    .center{
+        min-height: 80vh;
+    }
+     .rectangle{
+    text-align: left;
+    margin-left: 50px;
+}
+    #about{
+        margin: 0 auto;;
+        width: 90%;
+    }
+    #about-container {
+    display: block;
+}
+    #headerpic {
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 85%;
+    height: auto;
+    margin: 0 25px;
+    border-radius: 0%;
+    
+}
+    #education{
+        margin: 0 auto;
+        
+    }
+    .portfolio-content{
+    width: 80%;
+     height: 80%;
+    padding: 25px 0;
+    margin: 0 auto;
+    float: none;
+    padding-bottom: 30px;
+    }
+    .portfoliobox{
+        padding: 0;
+    }
+    .portfolio-content img{
+        height: 40%;
+    }
+    .preview{
+        width: 60%;
+    }
+        .wrapper{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width : 475px){
+ 
+    #menus{
+        text-align: center;
+         float: none;
+       
+        margin: 0;
+    }
+    #footermenus{
+        display: none;
+    }
+     #menus li{
+        padding: 15px 5px;
+        float: none;
+         font-size: 10px;
+    }
+    .center{
+        height: auto;
+        
+    }
+
+    #headerpic {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 95%;
+    height: auto;
+    border-radius: 0%;
+    padding: 20px;
+    margin: 0 auto;
+}
+    #about h2{
+        font-size: 20px;
+    }
+    #about{
+        padding: 0;
+    }
+    #name{
+        font-size: 35px;
+    }
+    .button {
+        margin: 10px;}
+    .sociallink{
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+     .portfolio-content{
+    width: 95%;
+    height: 70%;
+    padding: 15px 0;
+    margin: 0 auto;
+    }
+    .portfolio-content img{
+        height: 30%;
+    }
+}
+@media only screen and (max-width : 320px){
+    .portfolio-content{
+        height: 80%;
+        padding-bottom: 200px;
+        
+    } 
+    #social i{
+        margin: 6px;
+    }
+}
