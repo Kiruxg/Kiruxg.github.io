@@ -166,7 +166,7 @@ About me
 ======== */
 #aboutme{
      margin-top: 45px;
-    padding-top: 100px;
+    padding: 30px auto;
     background-color: #f8f8f8;
     width: 100%;
 }
